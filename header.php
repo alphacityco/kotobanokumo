@@ -23,39 +23,51 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site container">
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-		</div>
+<section id="hero-area">
+      <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/header.jpg" alt="">
+    </section>
+    <!--
+    Header start 
+    ============================== -->
+    <nav id="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <nav class="navbar navbar-default">
+                          <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                                  <a class="navbar-brand" href="#">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo">
+                                  </a>
 
-		<nav id="site-navigation" class="main-navigation navbar navbar-default" role="navigation">
-			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_s' ); ?></a>
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
-                    <span class="sr-only"><?php _e('Toggle navigation', '_s'); ?></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!--<a class="navbar-brand" href="#">Brand</a>-->
-            </div>
+                            </div>
 
-            <div class="collapse navbar-collapse" id="navbar-collapse-main">
-                <?php
-                wp_nav_menu( array(
-                        'theme_location'  => 'primary',
-                        'container'       => false,
-                        'menu_class'      => 'nav navbar-nav',//  navbar-right
-                        'walker'          => new Bootstrap_Nav_Menu(),
-                    )
-                );
-                get_search_form();
-                ?>
-            </div><!-- /.navbar-collapse -->
-
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                              <ul class="nav navbar-nav navbar-right" id="top-nav">
+                                <li><a href="#hero-area">Home</a></li>
+                                <li><a href="#about-us">about us</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#price">menu</a></li>
+                                <li><a href="#subscribe">news</a></li>
+                                <li><a href="#contact-us">contacts</a></li>
+                              </ul>
+                            </div><!-- /.navbar-collapse -->
+                          </div><!-- /.container-fluid -->
+                        </nav>
+                    </div>
+                </div><!-- .col-md-12 close -->
+            </div><!-- .row close -->
+        </div><!-- .container close -->
+    </nav><!-- header close -->
+    <!--
+    Slider start
+    ============================== -->
