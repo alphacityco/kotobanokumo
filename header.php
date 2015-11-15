@@ -45,21 +45,23 @@
                                 <span class="icon-bar"></span>
                               </button>
                                   <a class="navbar-brand" href="#">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo-kotuba-no-kumo.png" alt="Logo">
                                   </a>
 
                             </div>
 
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                              <ul class="nav navbar-nav navbar-right" id="top-nav">
-                                <li><a href="#hero-area">Home</a></li>
-                                <li><a href="#about-us">about us</a></li>
-                                <li><a href="#blog">Blog</a></li>
-                                <li><a href="#price">menu</a></li>
-                                <li><a href="#subscribe">news</a></li>
-                                <li><a href="#contact-us">contacts</a></li>
-                              </ul>
+                                <?php
+                                    wp_nav_menu( array(
+                                        'theme_location'  => 'primary',
+                                        'container'       => false,
+                                        'menu_class'      => 'nav navbar-nav navbar-right',//  navbar-right
+                                        'walker'          => new Bootstrap_Nav_Menu(),
+                                        )
+                                    );
+                                    //get_search_form();
+                                ?>
                             </div><!-- /.navbar-collapse -->
                           </div><!-- /.container-fluid -->
                         </nav>
