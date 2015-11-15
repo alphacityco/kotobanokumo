@@ -1,7 +1,7 @@
-$(document).ready(function(){
+jQuery(document).ready(function(){
 
 
- $("#owl-example").owlCarousel({
+ jQuery("#owl-example").owlCarousel({
     // Most important owl features
     items : 4,
     pagination : true,
@@ -11,11 +11,11 @@ $(document).ready(function(){
     slideSpeed : 800,
  });
 
-	$("#navigation").sticky({
+	jQuery("#navigation").sticky({
 		topSpacing : 75,
 	});
 
-	$('#nav').onePageNav({
+	jQuery('#nav').onePageNav({
 		currentClass: 'current',
 		changeHash: false,
 		scrollSpeed: 15000,
@@ -24,7 +24,7 @@ $(document).ready(function(){
 		easing: 'easeInOutExpo'
 	});
 
-     $('#top-nav').onePageNav({
+     jQuery('#top-nav').onePageNav({
          currentClass: 'active',
          changeHash: true,
          scrollSpeed: 1200
