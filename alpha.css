@@ -35,3 +35,13 @@ a .fpw-page-title {
     padding-right: 30%;
     margin-top: 20px;
 }
+
+/* Glosarios páginas internas */
+
+a.name_directory_startswith {
+    display: none;
+}
+
+.glosarios-internos div#primary {
+    padding-left: 50px;
+}

@@ -11,7 +11,7 @@
  */
 
 get_header(); ?>
-<div class="container">
+<div class="container glosarios-internos">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
