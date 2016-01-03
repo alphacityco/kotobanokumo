@@ -108,6 +108,25 @@ function _s_widgets_init() {
 }
 add_action( 'widgets_init', '_s_widgets_init' );
 
+function crear_widget( $nombre, $id, $descripcion ) {
+		register_sidebar(array(
+			'name' => __( $nombre ),	 
+			'id' => $id, 
+			'description' => __( $descripcion ),
+			'before_widget' => '<div class="widget">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3>',
+			'after_title' => '</h3>'
+		));
+	}
+	crear_widget('Glosario destacado 1','top1','Se mostrará en el medio de la página principal del sitio.');
+	crear_widget('Glosario destacado 2','top2','Se mostrará en el medio de la página principal del sitio.');
+	crear_widget('Glosario destacado 3','top3','Se mostrará en el medio de la página principal del sitio.');
+	crear_widget('Glosario destacado 4','top4','Se mostrará en el medio de la página principal del sitio.');
+	crear_widget('Glosario destacado 5','top5','Se mostrará en el medio de la página principal del sitio.');
+	crear_widget('Glosario destacado 6','top6','Se mostrará en el medio de la página principal del sitio.');
+
+
 /**
  * Enqueue scripts and styles.
  */
